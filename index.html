@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Year 2025 Gift Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <div class="pages">
+      <!-- Page 1: Welcome -->
+      <div class="page front-page">
+        <h1 class="color-changing-text">🎉 Happy New Year 2025! 🎉</h1>
+        <p>Chal Meri jaaan ek new starting karte ha!</p>
+        <p> Meri beti please muh mat latka kar baith! </p>
+        <button onclick="nextPage()">Start</button>
+      </div>
+
+      <!-- Page 2: Reflection -->
+      <div class="page hidden">
+        <h1 class="page-title">✨ Reflect on 2024 ✨</h1>
+        <p>Tera  best moment of 2024 kya tha beta?</p>
+        <input type="text" id="reflection" placeholder="Your best moment...">
+        <button onclick="saveReflection()">Save</button>
+        <p id="saved-reflection"></p>
+        <button onclick="nextPage()">Next</button>
+      </div>
+
+      <!-- Page 3: Appreciation -->
+      <div class="page hidden">
+        <h1 class="page-title">💖 You Are Amazing 💖</h1>
+        <p>Thank you meri jaaan mera itna sath dena ka liya!</p>
+        <p>Pagal teri wajha se mera 2024 khusiyo se bhara 
+        gya!</p>
+        <button onclick="nextPage()">Next</button>
+      </div>
+
+      <!-- Page 4: Apology -->
+      <div class="page hidden">
+        <h1 class="page-title">🙏 Dil se mafi mang raha hu jaaan! 🙏</h1>
+        <p>I'm sorry meri jaaan 2024 ma tujhe hurt kiya 
+        kuch bura bola toh please maaf kar dena jaaan.</p>
+        <p> Chal meri jaaan 2025 ko pichli saal se behtar or best bna te
+        ha sath milkar. </p> 
+        <button onclick="nextPage()">Next</button>
+      </div>
+
+      <!-- Page 5: Goals -->
+      <div class="page hidden">
+        <h1 class="page-title">🎯 Set Your 2025 Goals  Meri jaaan. 🎯</h1>
+        <p>Kya achive karna cahti ha tu in 2025 jaan?</p>
+        <input type="text" id="goal" placeholder="Your 2025 goal...">
+        <button onclick="saveGoal()">Save</button>
+        <p id="saved-goal"></p>
+        <button onclick="nextPage()">Next</button>
+      </div>
+
+      <!-- Page 7: Fun Fact -->
+      <div class="page hidden">
+        <h1 class="page-title">🌟 Did You Know? 🌟</h1>
+        <p> You are the cutest girl in this world meri jaaan.
+        Tera alawa koi or khubsurat nahi ha is duniya ma meri jaan.</p>
+        <button onclick="nextPage()">Next</button>
+      </div>
+
+      <!-- Page 8: Fireworks Celebration -->
+      <div class="page hidden">
+        <h1 class="color-changing-text">🎆 Fireworks Time! 🎆</h1>
+        <p>Welcome Karte ha 2025 ka patakho ke  sath beta.
+        sorry patkaho ma sound add karna nahi ata </p>
+        <button onclick="showFireworks()">Celebrate</button>
+      </div>
+   
+       <!-- Final Page -->
+      <div class="page hidden">
+        <h1 class="color-changing-text">🎇 Cheers to 2025! 🎇</h1>
+        <p>May this year bring you endless joy, success, and unforgettable memories!</p>
+        <button onclick="restartCard()">Start Again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fireworks Canvas -->
+  <canvas id="fireworks"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>}
